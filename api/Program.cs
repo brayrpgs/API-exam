@@ -1,3 +1,6 @@
+//inyect env vars
+DotNetEnv.Env.Load();
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -22,7 +25,10 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
-
 app.MapControllers();
+
+//test
+ConnectionSQL.GetConnect();
+
 
 app.Run();
