@@ -9,7 +9,8 @@ class ConnectionSQL
         string port = Env.GetString("PORT");
         string user = Env.GetString("USER");
         string password = Env.GetString("PASSWORD");
-        string connectionString = $"Server={host},{port};Database=EduTrackDB;User Id={user};Password={password};";
+        string database = Env.GetString("DATABASE");
+        string connectionString = $"Server={host},{port};Database={database};User Id={user};Password={password};";
 
 
         return new SqlConnection(connectionString);
