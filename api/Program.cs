@@ -27,8 +27,7 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-//test
-ConnectionSQL.GetConnect();
+
 
 
 app.Run();
