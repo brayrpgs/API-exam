@@ -6933,19 +6933,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\braya\\.nuget\\packages\\": {}
+    "C:\\Users\\Kendall\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\braya\\Desktop\\moviles\\examen 1\\API-exam\\api\\api.csproj",
+      "projectUniqueName": "C:\\Users\\Kendall\\Desktop\\UNA I CICLO 2025\\Moviles\\Examen 1\\Practico\\Api\\API-exam\\api\\api.csproj",
       "projectName": "api",
-      "projectPath": "C:\\Users\\braya\\Desktop\\moviles\\examen 1\\API-exam\\api\\api.csproj",
-      "packagesPath": "C:\\Users\\braya\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\braya\\Desktop\\moviles\\examen 1\\API-exam\\api\\obj\\",
+      "projectPath": "C:\\Users\\Kendall\\Desktop\\UNA I CICLO 2025\\Moviles\\Examen 1\\Practico\\Api\\API-exam\\api\\api.csproj",
+      "packagesPath": "C:\\Users\\Kendall\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Kendall\\Desktop\\UNA I CICLO 2025\\Moviles\\Examen 1\\Practico\\Api\\API-exam\\api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\braya\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Kendall\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -7011,7 +7011,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
