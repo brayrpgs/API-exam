@@ -25,9 +25,7 @@ class DataCourse : ConnectionSQL
         SqlDataReader reader = sqlCommand.ExecuteReader();
         if (reader.Read())
         {
-            conn.Close();
-            //map data to object course
-            return new Course
+            var course = new Course
             {
                 Id = reader.GetInt32(reader.GetOrdinal("ID")),
                 Name = reader.GetString(reader.GetOrdinal("NAME_COURSE")),
@@ -36,6 +34,9 @@ class DataCourse : ConnectionSQL
                 Schedule = reader.GetString(reader.GetOrdinal("SHEDULE")),
                 Professor = reader.GetString(reader.GetOrdinal("PROFESSOR"))
             };
+
+            conn.Close();
+            return course;
         }
         else
         {
@@ -48,18 +49,18 @@ class DataCourse : ConnectionSQL
     {
         List<Course> courses = new List<Course>();
 
-        
+
         SqlCommand sqlCommand = new SqlCommand("SELECT_COURSE", conn);
         sqlCommand.CommandType = CommandType.StoredProcedure;
 
-        
+
         conn.Open();
 
-        
+
         SqlDataReader reader = sqlCommand.ExecuteReader();
         while (reader.Read())
         {
-            
+
             courses.Add(new Course
             {
                 Id = reader.GetInt32(reader.GetOrdinal("ID")),
@@ -119,7 +120,7 @@ class DataCourse : ConnectionSQL
         int affectedRows = sqlCommand.ExecuteNonQuery();
         conn.Close();
 
-        return affectedRows > 0; 
+        return affectedRows >= -1;
     }
 
     public List<Student> GetStudentsByCourseId(int courseId)
