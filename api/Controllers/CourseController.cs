@@ -23,7 +23,6 @@ public class CourseController : ControllerBase
         }
         return Ok(course);
     }
-
     [HttpGet("{id}/students")]
     public IActionResult GetStudentById(int id)
     {
