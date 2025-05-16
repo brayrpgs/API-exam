@@ -26,10 +26,18 @@ public class StudentController : ControllerBase
     }
 
     [HttpPost]
-    public IActionResult Post([FromBody] Student student)
+    public async Task<IActionResult> Post([FromBody] Student student)
     {
         try{
             var insertedStudent = new DataStudent().CreateStudent(student.Name, student.Email, student.Phone, student.CourseId);
+            var course = new DataCourse().GetCourseById(student.CourseId);
+
+            await FirebaseHelper.SendPushNotificationToTopicAsync(
+                topic: "exam_notifications",
+                title: "New student registered",
+                body: $"The student \"{student.Name}\" has been successfully enrolled in the course \"{course.Name}\"."
+            );
+
             return Ok(insertedStudent);
             
         } 
