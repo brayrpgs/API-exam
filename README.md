@@ -1,5 +1,9 @@
 # Steps to Set the Project Locally
 
+> **Important:** This project was built using **.NET 9**.  
+> Make sure you have the correct version of the .NET SDK installed before proceeding.  
+> You can download it from the official website: [https://dotnet.microsoft.com](https://dotnet.microsoft.com)
+
 Follow these steps to get the project up and running on your local machine:
 
 ## 1. Clone the Repository
