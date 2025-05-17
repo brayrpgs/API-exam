@@ -15,7 +15,7 @@ git clone https://github.com/brayrpgs/API-exam.git
 ## 2. Locate and extract the `secrets.zip` file
 This process will generate two files:  
 - One containing the `.env` file configuration  
-- Another containing the FCM (Firebase Cloud Messaging) configuration
+- Another file will include a `.txt` containing a link to Google Drive. This link allows you to download the FCM credentials file in `.json` format. Once downloaded, it must be placed in the following path within the project: `../API-Exam/api/`
 
 ## 3. Configure the Database
 
